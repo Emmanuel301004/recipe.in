@@ -1,0 +1,15 @@
+<h1>Recipe Finder</h1>
+<input type="text" [(ngModel)]="query" placeholder="Enter a dish name">
+<button (click)="searchRecipes()">Search</button>
+
+<div id="recipe-list">
+    <div *ngFor="let recipe of recipes">
+        <h2>{{ recipe.label }}</h2>
+        <img [src]="recipe.image" alt="{{ recipe.label }}" />
+        <p [ngClass]="getCalorieClass(recipe.calorieLevel)">
+          Calories: {{ recipe.calories }}
+        </p>
+        <p>Calorie Level: {{ recipe.calorieLevel }}</p>
+        <a [href]="recipe.url" target="_blank">View Recipe</a>
+    </div>      
+</div>

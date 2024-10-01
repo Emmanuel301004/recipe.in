@@ -1,0 +1,69 @@
+h1{
+ align-items: center;
+ margin-left: 6vw;   
+ margin-top: 8vh;
+}
+input{
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    margin-left: 5vw;
+    margin-top: 4vh;
+}
+button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 2vw;
+    margin-top: 4vh;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+#recipe-list{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 10vh;
+    border-collapse: collapse;
+    display: flex;
+    flex-wrap: wrap;
+align-items: center;
+    justify-content: space-around;
+    gap: 2vw;
+    flex: 0 1 21%; 
+}
+
+#recipe-list h2{
+    font-size:medium;
+}
+
+#recipe-list img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    clip-path: circle();
+}
+#recipe-list div{
+    gap: 4px;
+    
+    width :200px;
+    height: 350px;
+
+}
+.low-calorie {
+    color: green;   /* Color for low calories */
+  }
+  
+  .medium-calorie {
+    color: orange;  /* Color for medium calories */
+  }
+  
+  .high-calorie {
+    color: red;     /* Color for high calories */
+  }
+  
+  .very-high-calorie {
+    color: darkred; /* Color for very high calories */
+  }
+  
